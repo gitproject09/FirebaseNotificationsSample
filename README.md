@@ -1,7 +1,8 @@
-===========================
 Firebase Push Notifications
 ===========================
+
 A simple Push notifications received in android device from firebase console.
+
 ------------
 Introduction
 ------------
