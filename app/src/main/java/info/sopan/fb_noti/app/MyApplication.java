@@ -2,7 +2,12 @@ package info.sopan.fb_noti.app;
 
 import android.app.Application;
 import android.content.Context;
-import android.support.multidex.MultiDex;
+
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.appcheck.FirebaseAppCheck;
+import com.google.firebase.appcheck.playintegrity.PlayIntegrityAppCheckProviderFactory;
+
+import androidx.multidex.MultiDex;
 
 /**
  * Created by Sopan Ahmed on 28/09/16.
@@ -23,6 +28,10 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
+
+        FirebaseApp.initializeApp(this);
+        FirebaseAppCheck firebaseAppCheck = FirebaseAppCheck.getInstance();
+        firebaseAppCheck.installAppCheckProviderFactory(PlayIntegrityAppCheckProviderFactory.getInstance());
 
         /*startService(new Intent(this, BackgroundService.class));
         Log.d("FirebaseNoti", "service start in BackgroundService");*/

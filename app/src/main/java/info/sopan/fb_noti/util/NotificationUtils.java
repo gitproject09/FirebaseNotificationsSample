@@ -14,10 +14,8 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
 import android.text.Html;
 import android.text.TextUtils;
-import android.util.Patterns;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,6 +26,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+import androidx.core.app.NotificationCompat;
 import info.sopan.fb_noti.R;
 import info.sopan.fb_noti.app.Config;
 

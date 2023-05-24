@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Notifications</string>
     <string name="title_main_activity">Firebase Notifications</string>
+
+    <string name="notification_channel_id">fcm_default_channel</string>
+    <string name="notification_channel_name">Channel Name</string>
+    <string name="notification_channel_description">Channel Description</string>
+
+
+    <string name="msg_subscribed">Successfully Subscribed to Notifications</string>
+    <string name="msg_subscribe_failed">Failed to Subscribe</string>
+
 </resources>
